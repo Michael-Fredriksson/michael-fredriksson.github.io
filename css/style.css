@@ -6,7 +6,7 @@ html {
 body {
     height: 100%;
     width: 100%;
-    background-image: url('sunset.jpg');
+    background-image: url('../image/sunset.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
