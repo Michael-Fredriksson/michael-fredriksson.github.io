@@ -15,32 +15,41 @@ body {
     font-family: sans-serif;
     line-height: 1.3rem;
 }
-
+@media screen AND (max-height: 400px) {
+    body {
+        height: initial;
+        width: initial;      
+    }
+}
 * {
     box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --testa: #0b0b0b91;
+        --card_bg: #0b0b0b91;
     }
 }
 
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
     :root {
-        --testa: #ff141491;
-        --testa: #28828291;
-        --testa: #40288291;
-        --testa: #0b0b0b91;
+        /* --card_bg: #ff141491;
+        --card_bg: #28828291;
+        --card_bg: #40288291; */
+        --card_bg: #0b0b0b91;
     }
-} */
-
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* background-color: #0b0b0b91; */
-    background-color: var(--testa);
+    background-color: var(--card_bg);
     border-radius: 10px;
     border: 1px solid #ffffffb2;
     padding: 10px 15px;
@@ -50,10 +59,10 @@ body {
     width: 800px;
     max-width: 90%;
     margin: 20px auto;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
+    translate: -50% -50%; */
 }
 
 @media screen and (max-width: 600px) {
