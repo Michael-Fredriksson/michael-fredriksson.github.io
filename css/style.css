@@ -17,8 +17,7 @@ body {
 }
 @media screen AND (max-height: 400px) {
     body {
-        height: initial;
-        width: initial;      
+        height: 100vh;    
     }
 }
 * {
@@ -44,6 +43,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+@media screen AND (max-height: 400px) {
+    .card-container {
+        height: initial;    
+    }
 }
 .card {
     display: flex;
