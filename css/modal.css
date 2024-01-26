@@ -26,10 +26,9 @@ body {
         --modal_alert_color: white;
         --modal_alert_tshadow: 0 0 1px black, 0 0 3px black;
         --modal_confirm_bg: #0082ff;
+        --modal_confirm_color: black;
+        --modal_confirm_tshadow: 0 0 1px white, 0 0 3px white;
         --mPop_close_bg: #979797;
-        --button_container_bg: #0b0b0b91;
-        --button_container_color: rgb(247, 247, 247);
-        --button_container_tshadow: 0 0 1px black, 0 0 2px black;
     }
 }
 
@@ -44,10 +43,9 @@ body {
         --modal_alert_color: white;
         --modal_alert_tshadow: 0 0 1px black, 0 0 3px black;
         --modal_confirm_bg: #0082ff;
+        --modal_confirm_color: black;
+        --modal_confirm_tshadow: 0 0 1px white, 0 0 3px white;
         --mPop_close_bg: #979797;
-        --button_container_bg: #0b0b0b91;
-        --button_container_color: rgb(247, 247, 247);
-        --button_container_tshadow: 0 0 1px black, 0 0 2px black;
     }
 }
 
@@ -178,6 +176,8 @@ nav {
 
 .modal_button_confirm {
     background-color: var(--modal_confirm_bg);
+    color: var(--modal_confirm_color);
+    text-shadow: var(--modal_confirm_tshadow);
 }
 
 .open_pop {
@@ -204,6 +204,13 @@ nav {
     color: #656565
 }
 
+
+/* buttons to open modal */
+:root {
+    --button_container_bg: #0b0b0b91;
+    --button_container_color: rgb(247, 247, 247);
+    --button_container_tshadow: 0 0 1px black, 0 0 2px black;
+}
 .button_container {
     display: inline-block;
     max-width: 1100px;
