@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JS modal</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Michael Fredriksson" />
+    <meta name="ower" content="Michael Fredriksson" />
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            Navigation |
+            <a href="index.html">Index</a>
+        </nav>
+
+    </header>
+    <main>
+        <div class="modal_overlay">
+        </div>
+        <div class="modal_pop">
+            <div id="mPop_close_div"><button class="mPop_close modal_button"></button></div>
+            <div class="modal_conatiner">
+                <div id="modal_message">
+                </div>
+                <div class="modal_button_container">
+                    <button id="mPop_cancel" class="modal_button"></button>
+                    <button id="mPop_continue" class="modal_button"></button>
+                </div>
+            </div>
+        </div>
+        <div class="button_container">
+            <div class="button_flex">
+                <div>
+                    <p>Simple modal</p>
+                    <button class="open_pop"
+                        onclick='new open_mPop("<p>This modal is created by HTML, CSS and javascript.</p><p>Press &apos;Cancel&apos;, click on the overlay or press the ESC-key to quit.</p>", head="My modal", type="", url="")'>
+                        Open modal </button>
+                </div>
+                <div>
+                    <p>Simple alert modal</p>
+                    <button class="open_pop"
+                        onclick='new open_mPop("<p>This modal is created by HTML, CSS and javascript.</p><p>Press &apos;Cancel&apos;, click on the overlay or press the ESC-key to quit.</p>", head="My modal", type="alert", url="")'>
+                        Open modal </button>
+                </div>
+                <div>
+                    <p>Simple ask confirm modal</p>
+                    <button class="open_pop"
+                        onclick='new open_mPop("<p>This modal is created by HTML, CSS and javascript.</p><p>Press &apos;Cancel&apos;, click on the overlay or press the ESC-key to quit, or &apos;OK&apos; to go to this modal on GitHub.</p>", head="My modal", type="", url="https://github.com/Michael-Fredriksson/Simple-JS-modal")'>
+                        Open modal </button>
+                </div>
+                <div>
+                    <p>Simple ask confirm modal (alert)</p>
+                    <button class="open_pop"
+                        onclick='new open_mPop("<p>This modal is created by HTML, CSS and javascript.</p><p>Press &apos;Cancel&apos;, click on the overlay or press the ESC-key to quit, or &apos;OK&apos; to go to this modal on GitHub.</p>", head="My modal", type="alert", url="https://github.com/Michael-Fredriksson/Simple-JS-modal")'>
+                        Open modal </button>
+                </div>
+                <div>
+                    <p>Simple info modal (with overlay scroll)</p>
+                    <button class="open_pop"
+                        onclick='new open_mPop("<p>This modal is created by HTML, CSS and javascript.</p><p>Press &apos;X&apos;, click on the overlay or press the ESC-key to quit.</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore dolores consequuntur voluptatibus placeat nihil, fugiat rem qui, minima at natus sapiente debitis totam. Consequatur molestias iusto porro laudantium ullam necessitatibus impedit reiciendis sunt nesciunt cumque magnam tempore, animi dignissimos incidunt neque eius quod deleniti, quidem eaque inventore esse officia consequuntur.</p> ", head="My modal", type="info", url="")'>
+                        Open modal </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/modal.js"></script>
+
+</body>
+
+</html>
